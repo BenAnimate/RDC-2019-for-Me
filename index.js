@@ -15,7 +15,6 @@ function xxx(){
 	});
 	*/
 	request.get({url:'https://devforum.roblox.com/notifications?recent=true',headers:headers},(e,r,b)=>{
-		console.log(4);
 		console.log(JSON.parse(b));
 	});
 }
@@ -29,8 +28,8 @@ server.listen(PORT,()=>{
 	console.log(`Server running on ${PORT}.`);
 });
 
-//xxx();
+xxx();
 setInterval(()=>{
 	request.get('https://devforum-autom8er.herokuapp.com/');
-	//xxx();
+	xxx();
 },69000);
