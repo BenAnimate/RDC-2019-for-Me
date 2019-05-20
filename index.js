@@ -23,8 +23,8 @@ server.listen(PORT,()=>{
 	console.log(`Server running on ${PORT}.`);
 });
 
-xxx();
+//xxx();
 setInterval(()=>{
 	request.get('https://devforum-autom8er.herokuapp.com/');
-  xxx();
+	//xxx();
 },69000);
