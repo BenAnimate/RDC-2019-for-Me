@@ -15,7 +15,7 @@ function xxx(){
 	});
 	*/
 	request.get({url:'https://devforum.roblox.com/notifications?recent=true',headers:headers},(e,r,b)=>{
-		console.log(JSON.parse(b));
+		console.log(r.headers);
 	});
 }
 
