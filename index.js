@@ -5,17 +5,13 @@ var headers={Cookie:'_t='+process.env.t};
 var t='Count me in; I\'ve made a Heroku application just to ensure I secure a spot.'
 
 function xxx(){
-	/*
 	request.get({url:'https://devforum.roblox.com/c/roblox-developer-conference/l/latest.json',headers:headers},(e,r,b)=>{
+		console.log(r.headers['x-discourse-username']);
 		var topics=JSON.parse(b).topic_list.topics;
 		request.get({url:'https://devforum.roblox.com/user_actions.json?username=visualplugin',headers:headers},(e,r,b)=>{
 			var actions=JSON.parse(b).user_actions.map(t=>{return t.excerpt});
-			console.log(actions);
+			//console.log(actions);
 		});
-	});
-	*/
-	request.get({url:'https://devforum.roblox.com/notifications?recent=true',headers:headers},(e,r,b)=>{
-		console.log(r.headers);
 	});
 }
 
@@ -29,7 +25,9 @@ server.listen(PORT,()=>{
 });
 
 xxx();
+/*
 setInterval(()=>{
 	request.get('https://devforum-autom8er.herokuapp.com/');
 	xxx();
 },69000);
+*/
