@@ -14,7 +14,8 @@ function xxx(){
 		});
 	});
 	*/
-	request.get({url:'https://devforum.roblox.com/notifications?recent=true&limit=18&_=1558323507291',headers:headers},(e,r,b)=>{
+	request.get({url:'https://devforum.roblox.com/notifications?recent=true',headers:headers},(e,r,b)=>{
+		console.log(4);
 		console.log(JSON.parse(b));
 	});
 }
